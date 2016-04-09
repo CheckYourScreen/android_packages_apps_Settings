@@ -380,6 +380,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mUpdateRecovery = findAndInitSwitchPref(UPDATE_RECOVERY_KEY);
         mDevelopmentShortcut = findAndInitSwitchPref(DEVELOPMENT_SHORTCUT_KEY);
 
+        removePreference(mUpdateRecovery);
 
         if (!android.os.Process.myUserHandle().equals(UserHandle.OWNER)) {
             disableForUser(mEnableAdb);
@@ -387,7 +388,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             disableForUser(mEnableTerminal);
             disableForUser(mPassword);
             disableForUser(mAdvancedReboot);
-            disableForUser(mUpdateRecovery);
             disableForUser(mDevelopmentShortcut);
         }
 
