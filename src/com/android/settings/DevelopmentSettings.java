@@ -368,13 +368,14 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             mForceHighEndGfx = null;
         }
 
+        removePreference(mUpdateRecovery);
+
         if (!android.os.Process.myUserHandle().equals(UserHandle.OWNER)) {
             disableForUser(mEnableAdb);
             disableForUser(mClearAdbKeys);
             disableForUser(mEnableTerminal);
             disableForUser(mPassword);
             disableForUser(mAdvancedReboot);
-            disableForUser(mUpdateRecovery);
             disableForUser(mDevelopmentShortcut);
             disableForUser(mQuickBoot);
         }
