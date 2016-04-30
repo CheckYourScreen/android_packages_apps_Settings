@@ -136,7 +136,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
     protected static final int MY_USER_ID = UserHandle.myUserId();
 
-    protected static final String LIVE_LOCK_SCREEN_FEATURE = "org.cyanogenmod.livelockscreen.noop";
+    protected static final String LIVE_LOCK_SCREEN_FEATURE = "org.cyanogenmod.livelockscreen";
 
     private PackageManager mPM;
     private DevicePolicyManager mDPM;
