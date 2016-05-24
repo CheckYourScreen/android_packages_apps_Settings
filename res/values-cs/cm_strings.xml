@@ -133,7 +133,7 @@
   <!-- Profile Settings sound modes labels -->
   <string name="sound_mode">Režim upozornění</string>
   <string name="ringer_mode">Režim vyzvánění</string>
-  <string name="lights_mode">Režim světelné signalizace</string>
+  <string name="lights_mode">Režim světelné indikace</string>
   <string name="vibrate_mode">Režim vibrací</string>
   <string name="choose_soundtone">Zvolte tón upozornění</string>
   <string name="choose_ringtone">Zvolte vyzváněcí melodii</string>
@@ -174,6 +174,18 @@
   <string name="wifi_setting_countrycode_summary">Zadejte kód regionu Wi\u2011Fi</string>
   <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
   <string name="wifi_setting_countrycode_error">Při nastavení kódu regionu došlo k problému.</string>
+  <string name="wifi_countrycode_us">Spojené státy</string>
+  <string name="wifi_countrycode_ca">Kanada, Taiwan</string>
+  <string name="wifi_countrycode_de">Německo</string>
+  <string name="wifi_countrycode_gb">Evropa</string>
+  <string name="wifi_countrycode_jp">Japonsko, Rusko</string>
+  <string name="wifi_countrycode_au">Austrálie</string>
+  <string name="wifi_countrycode_cn">Čína</string>
+  <string name="wifi_countrycode_kr">Korea</string>
+  <string name="wifi_countrycode_tr">Jižní Afrika, Turecko</string>
+  <string name="wifi_countrycode_sg">Izrael, Singapur</string>
+  <string name="wifi_countrycode_br">Brazílie</string>
+  <string name="wifi_countrycode_in">Indie</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Smazat</string>
   <string name="profile_action_none">Ponechat nezměněné</string>
@@ -220,7 +232,7 @@
   <string name="navigation_bar_arrow_keys_summary">Zobrazit levý a pravý kurzor při psaní. Potlačí IME přepínač.</string>
   <string name="navigation_bar_recents_title">Akce dlouhého stisku tlačítka „Nedávné“</string>
   <!-- Notification light dialogs -->
-  <string name="edit_light_settings">Upravit světelnou signalizaci</string>
+  <string name="edit_light_settings">Upravit nastavení osvětlení</string>
   <string name="pulse_speed_title">Délka impulsu a rychlost</string>
   <string name="default_time">Normální</string>
   <string name="custom_time">Vlastní</string>
@@ -431,6 +443,7 @@
   <string name="app_ops_allowed_count">Povoleno <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_ignored_count">Zakázáno <xliff:g id="count" example="2 times">%s</xliff:g></string>
   <string name="app_ops_both_count">Povoleno <xliff:g id="count">%1$s</xliff:g>, zakázáno <xliff:g id="count">%2$s</xliff:g></string>
+  <string name="app_ops_disabled_by_optimization">Zakázáno optimalizací baterie</string>
   <!-- App ops menu options -->
   <string name="app_ops_show_user_apps">Zobrazit uživatelské aplikace</string>
   <string name="app_ops_show_system_apps">Zobrazit systémové aplikace</string>
@@ -578,6 +591,9 @@
   <string name="saturation_str">Sytost: <xliff:g id="saturation_value">%1$s</xliff:g></string>
   <string name="contrast_str">Kontrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
   <string name="intensity_str">Intenzita: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+  <string name="screen_color_standard">Standardní</string>
+  <string name="screen_color_vivid">Živé</string>
+  <string name="screen_color_custom">Vlastní</string>
   <!-- LiveDisplay -->
   <string name="live_display_summary">Optimalizovat obrazovku podle denní doby a okolních podmínek pro lepší čitelnost a snížení namáhání očí</string>
   <string name="live_display_mode">Režim zobrazení</string>
@@ -665,7 +681,7 @@
   <string name="volume_keys_control_ring_stream_summary_on">Tlačítka hlasitosti ovládají hlasitost vyzvánění</string>
   <string name="volume_keys_control_ring_stream_summary_off">Tlačítka hlasitosti ovládají hlasitost médií</string>
   <string name="category_calibration">Kalibrace</string>
-  <string name="display_and_lights">Zobrazení a signalizace</string>
+  <string name="display_and_lights">Zobrazení a světla</string>
   <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
   <string name="power_notifications_category_title">Zvuk nabíječky</string>
@@ -999,4 +1015,31 @@
   <string name="restrict_app_cellular_title">Zakázat aplikaci používat mobilní data</string>
   <string name="restrict_app_cellular_summary">Zabrání aplikaci využívat datové připojení mobilních dat</string>
   <string name="privacy_guard_internet_category">Internet</string>
+  <!-- Weather -->
+  <string name="weather_settings_title">Počasí</string>
+  <string name="weather_settings_no_services_prompt">Nejsou nainstalovány žádné služby poskytovatele počasí</string>
+  <string name="weather_settings_button">Nastavení poskytovatele</string>
+  <string name="weather_settings_activity_not_found">Nelze spustit nastavení tohoto poskytovatele</string>
+  <string name="weather_settings_add_weather_provider">Přidat poskytovatele počasí</string>
+  <string name="weather_settings_general_settings_title">Hlavní</string>
+  <string name="weather_settings_providers_title">Poskytovatelé</string>
+  <string name="weather_settings_temp_units_title">Jednotky teploty</string>
+  <string name="weather_settings_temp_celsius">Celsia</string>
+  <string name="weather_settings_temp_fahrenheit">Fahrenheita</string>
+  <string name="weather_settings_keyword">počasí</string>
+  <string name="background_data_access">Přístup k datům na pozadí</string>
+  <string name="allow_background_both">Přes mobilní data a Wi\u2011Fi</string>
+  <string name="allow_background_wlan">Pouze přes Wi\u2011Fi</string>
+  <string name="allow_background_none">Bez přístupu</string>
+  <string name="mobile_data_alert">Upozornění mobilních dat</string>
+  <string name="mobile_data_alert_summary">Upozornit, pokud aplikace využije veliké množství přenášených dat</string>
+  <string name="data_usage_menu_enable_data_alerts">Povolit upozornění využití dat</string>
+  <string name="data_usage_menu_disable_data_alerts">Zakázat upozornění využití dat</string>
+  <string name="data_usage_menu_reset_stats">Vyčistit statistiku přenesených dat</string>
+  <string name="reset_data_stats_msg">Tímto dojde k vymazání všech minulých i aktuálních sledovacích informací</string>
+  <string name="reset_stats_confirm">Potvrdit</string>
+  <string name="restrict_cellular_access_title">Omezit přístup k mobilním datům</string>
+  <string name="restrict_cellular_access_summary">Zakázat přístup k datům na mobilních sítích</string>
+  <string name="restrict_cellular_access_dialog_title">Omezit přístup k mobilním datům?</string>
+  <string name="restrict_cellular_access_dialog_summary">Tato vlastnost může způsobit zastavení funkčnosti některých aplikací, které jsou závislé na přístupu k datům a zařízení je právě připojeno pouze k mobilní datové síti.\n\nVhodnějsí omezení využití dat je možné nalézt v ovládání používání datových sítí v nastavení aplikace.</string>
 </resources>
